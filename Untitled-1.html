@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="3191576-uhd_3840_2160_25fps.mp4" type="video/mp4">
+  </video>
+  
+
+    <header>
+        <div class="logo">
+            <img src="grow.webp" alt="Tickertape Logo">
+            <span>Tickertape</span>
+        </div>
+        <div class="ticker">
+            <marquee behavior="scroll" direction="left">
+                <span class="stock">NIFTY 50: 22,834.30 ▲1.45%</span>
+                <span class="stock">SENSEX: 75,301.26 ▲1.39%</span>
+                <span class="stock">USD/INR: 86.62 ▼0.29%</span>
+                <span class="stock">Gold: 9,071.34 ▲0.01%</span>
+            </marquee>
+        </div>
+        <div class="login">
+            <button>Sign Up / Login</button>
+        </div>
+    </header>
+
+    <section class="market-status">
+        <h2>The market is in <span class="greed">Greed</span> zone</h2>
+        <div class="market-indicators">
+            <div class="indicator"><i class="fas fa-chart-line"></i> TUE</div>
+            <div class="indicator"><i class="fas fa-chart-line"></i> WED</div>
+            <div class="indicator"><i class="fas fa-chart-line"></i> THU</div>
+            <div class="indicator"><i class="fas fa-chart-line"></i> MON</div>
+            <div class="indicator active"><i class="fas fa-chart-line"></i> TODAY</div>
+        </div>
+    </section>
+
+    <section class="market-data">
+        <h3>Market and Sectors</h3>
+        <div class="grid">
+            <div class="card">NIFTY 50 <span class="up">▲1.45%</span></div>
+            <div class="card">USD/INR <span class="down">▼0.29%</span></div>
+            <div class="card">Gold <span class="up">▲0.01%</span></div>
+            <div class="card">NIFTY 100 Largecap <span class="up">▲1.65%</span></div>
+            <div class="card">NIFTY 100 Midcap <span class="up">▲2.18%</span></div>
+            <div class="card">NIFTY Bank <span class="up">▲1.59%</span></div>
+        </div>
+    </section>
+</body>
+</html>
