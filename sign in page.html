@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Tickertape</title>
+    <link rel="stylesheet" href="sign in css.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="7580448-uhd_4096_2160_25fps.mp4" type="video/mp4">
+      </video>
+
+    <div class="login-container">
+        <h2>Sign In</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password"><i class="fas fa-lock"></i> Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="options">
+                <label><input type="checkbox" name="remember"> Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit">Sign In</button>
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+</body>
+</html>
