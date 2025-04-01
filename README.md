@@ -1,5 +1,5 @@
 # Stockprofile
-
+password: 123AASMSK321
 
 https://finnhub.io/?utm_source=chatgpt.com
 https://indianapi.in/indian-stock-market?utm_source=chatgpt.com
