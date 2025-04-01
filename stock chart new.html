@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Full-Screen Chart</title>
+    <style>
+        /* Make the page occupy the entire screen */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Add a smooth gradient */
+        }
+
+        /* Styling for the TradingView widget container */
+        .tradingview-widget-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Inner widget should take up almost all space */
+        .tradingview-widget-container__widget {
+            flex-grow: 1;
+        }
+
+        /* Copyright footer styling */
+        .tradingview-widget-copyright {
+            text-align: center;
+            font-size: 12px;
+            color: #546e7a;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 8px;
+        }
+
+        /* Link styling with hover effect */
+        .blue-text {
+            color: #1e88e5;
+            text-decoration: none;
+        }
+
+        .blue-text:hover {
+            color: #42a5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+            <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+                <span class="blue-text">Track all markets on TradingView</span>
+            </a>
+        </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+            "autosize": true,
+            "symbol": "NASDAQ:AAPL",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "allow_symbol_change": true,
+            "support_host": "https://www.tradingview.com"
+        }
+        </script>
+    </div>
+</body>
+</html>
